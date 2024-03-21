@@ -27,16 +27,29 @@ Congratulations! The app is running :D
 # Useful materials
 [Azure Main Page where you can sign up](https://azure.microsoft.com/en-us/)
 
+<sub>Sign up and get started in your own default directory!</sub>
+
+<br/>
+
 [Azure's Entra ID, formerly AD, tutorials regarding MSAL libraries](https://learn.microsoft.com/en-us/entra/msal/)
+
+<sub>Start learning! Azure provides a detailed learning path for implementing authentication with Entra ID, formerly AD.</sub>
+
+<br/>
+
+[Repositories for the different MSAL versions](https://github.com/AzureAD)
+
+<sub>Implement your app! These repositories include detailed documentation and example codes. There are msal packages for different languages such Python, Go, JS, etc.
+For web development, Azure even provides wrappers for different frameworks like React, Angular,etc.</sub>
 
 # Contact the team!
 If have any questions regarding this repository feel free to contact [me](mailto:Faeriq_Ramley@lta.gov.sg)
 
-If you have other questions or requests you may contact our Team lead, [Xujing](mailto:SHEN_Xujing@lta.gov.sg), or any of our frontend developers:
+If you have other questions or requests you may contact our Team lead, [Xujing](mailto:SHEN_Xujing@lta.gov.sg), or any of our frontend leaning developers:
 [Faeriq](mailto:FAERIQ_RAMLEY@lta.gov.sg)
 [Ernest](mailto:LOW_Ernest@lta.gov.sg)
-[JunRong](mailto:NG_Jun_Rong@lta.gov.sg)
-[LekPeng](mailto:Peng_lek@lta.gov.sg)
+[Jun Rong](mailto:NG_Jun_Rong@lta.gov.sg)
+[Lek Peng](mailto:Peng_lek@lta.gov.sg)
 <!-- 
 # React + TypeScript + Vite
 
