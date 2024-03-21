@@ -1,4 +1,9 @@
 import msalInstance from "../auth/config";
+
+/** Function that silently logs users in.
+ * If there are active accounts, login with acquireTokenSilent function.
+ * If there are no active accounts, try sso silent login once.
+ * */
 const silentLogin = (
   setJwtPayload: React.Dispatch<React.SetStateAction<string>>,
   setIsAuthenticated: React.Dispatch<React.SetStateAction<boolean>>,

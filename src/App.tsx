@@ -1,21 +1,28 @@
 import { useEffect, useState } from 'react'
-import './App.css'
 import msalInstance from './auth/config'
 import { AuthenticationResult } from '@azure/msal-browser'
 import Loading from './components/Loading.js'
 import Login from './components/Login.jsx'
-import { jwtDecode } from 'jwt-decode'
 import AppContent from './components/AppContent.js'
 import AppTitle from './components/AppTitle'
 import silentLogin from './functions/silentLogin'
 
 function App() {
+
+  // = These are global states shared between components in this demo =
   const [isLoading, setLoading] = useState<boolean>(false);
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
   const [jwtPayload, setJwtPayload] = useState<string>("");
+  // ==================================================================
 
+  // In React, useEffects are functions that run once on mount.
+  // However if variables are added to the array in the second argument, it runs whenever the variables updates.
   useEffect(() => {
     setLoading(true);
+
+    // MSAL: handleRedirectPromise() helps the application handle the state after a redirection or popup.
+    // In this code block, on page render, the code checks and handles any redirects.
+    // If not a redirect, it tries to silently log the user in.
     msalInstance
       .handleRedirectPromise()
       .then((authRes: AuthenticationResult | null) => {
@@ -37,6 +44,7 @@ function App() {
       })
   }, [])
 
+  // In React, this is where rendered content is placed for every component. Written in JSX.
   return (
     <>
       <title>Azure AD Demo</title>
