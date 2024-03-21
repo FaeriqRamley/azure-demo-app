@@ -1,3 +1,44 @@
+# How to run the application
+### First time setup
+For the first time after cloning/downloading the repository, install the application using
+```bash
+npm install
+```
+
+Add a file named and name it `.env` and copy these 3 variables
+```bash
+VITE_CLIENT_ID="<your-azure-client-id>"
+VITE_TENANT_ID="<your-azure-tenant-id>"
+VITE_REDIRECT_URI="<your-redirect-url>"
+```
+replace the variables with your actual ids and stuff.
+redirect url refers to your app url, in this context it should be http://localhost:5173
+As for the azure IDs, these are obtained from your app registration Overview Tab
+
+### Running the application
+To run the application
+```bash
+npm run dev
+```
+
+Congratulations! The app is running :D
+
+
+# Useful materials
+[Azure Main Page where you can sign up](https://azure.microsoft.com/en-us/)
+[Azure's Entra ID tutorials regarding MSAL](https://learn.microsoft.com/en-us/entra/msal/)
+
+
+
+#Contact the team!
+If have any questions regarding this repository please contact [me](mailto:Faeriq_Ramley@lta.gov.sg)
+
+If you have other questions or requests you may contact our Team lead, [Xujing](mailto:SHEN_Xujing@lta.gov.sg), or any of our frontend developers:
+[Faeriq](mailto:FAERIQ_RAMLEY@lta.gov.sg)
+[Ernest](mailto:LOW_Ernest@lta.gov.sg)
+[JunRong](mailto:NG_Jun_Rong@lta.gov.sg)
+[LekPeng](mailto:Peng_lek@lta.gov.sg)
+<!-- 
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -27,4 +68,4 @@ export default {
 
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list -->
